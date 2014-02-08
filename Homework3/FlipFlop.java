@@ -15,19 +15,25 @@ public class FlipFlop {
 
    public static void main(String[] args) {
    		int numeroActual = 0;
-   		System.out.println(args[0]);
+   		
+   		for (numActual = 1; numActual < 25; numActual++){
+		int numTres = numActual%3;
+		int numCinco = numActual%5;
 
    		// si el numero es divisible dentro de 3 imprima "Flip"
-			System.out.println("Flip");
+   		if(numTres<=0 && numCinco!=0){
+			System.out.println("Flip");}
 
    		// si el numero es divisible dentro de 5 imprima "Flop"
-			System.out.println("Flop");
+		if(numCinco<=0 && numTres!=0){
+			System.out.println("Flop");}
 
    		// si el numero es divisible dentro de 3 y 5 imprima "FlipFlop"
-			System.out.println("FlipFlop");
+		if(numTres<=0 && numCinco<=0){
+			System.out.println("FlipFlop");}
 
    		// de lo contrario, imprima el numero
-      		System.out.println(numeroActual);
+   		if(numTres!=0 && numCinco!=0){
+      		System.out.println(numeroActual);} }
    }
-
 }
