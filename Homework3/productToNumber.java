@@ -16,8 +16,7 @@ public class productToNumber {
 
    public static void main(String[] args) {
    		int resultado = 1;
-   		System.out.println(args[0]);
-      int inicio ;
+      		int inicio ;
 		int numero = 5;
 		int conteo ;
 		
