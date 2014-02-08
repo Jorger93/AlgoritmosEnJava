@@ -14,11 +14,17 @@ public class oddEven {
       
       	System.out.println(args[0]);
 
+      int x=5;
+	   int y=x%2;
+   	int xa=6;
+   	int ya=xa%2;
+
+      	System.out.println(x);
    		// si el numero es impar
-   			System.out.println("numero es impar");
+   			if (y >= 0) {System.out.println("numero es impar");}
 
    		// si el numero es par
-   			System.out.println("numero es par");
+   			else {System.out.println("numero es par");}
 
    }
 }
