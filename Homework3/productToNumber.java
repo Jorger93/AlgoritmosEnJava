@@ -12,8 +12,9 @@ mostrar
 
 */
 
-public class productToNumber {   
-
+public class productToNumber {  
+	public static int resultado = 1;
+	public static int resultado1(int in, int res){int c= res*in; return c;} ;
    public static void main(String[] args) {
    		int resultado = 1;
       		int inicio ;
@@ -21,11 +22,11 @@ public class productToNumber {
 		int conteo ;
 		
 		   for (inicio = 1; inicio<numero; inicio++){
-		resultado = resultado*inicio;
+		resultado = resultado1(inicio, resultado);
 		conteo = inicio;
 			System.out.print( conteo + "X"); }
 			
-		resultado = resultado*inicio;
+		resultado = resultado1(inicio, resultado);
 		conteo = inicio;
 		System.out.print(conteo);
 		System.out.println(" ");
