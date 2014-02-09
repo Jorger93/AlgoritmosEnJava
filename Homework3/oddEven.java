@@ -9,21 +9,18 @@ Dado un numero 'n' identifique si es par o impar
 */
 
 public class oddEven {   
-
+	public static int par(int a){ int y= a%2; return y;};
    public static void main(String[] args) {
-      
 
       int x=5;
-	   int y=x%2;
-   	int xa=6;
-   	int ya=xa%2;
+	int a =par(x);
 
-      	System.out.println(x);
+      	System.out.println("el numero es" x);
    		// si el numero es impar
-   			if (y >= 0) {System.out.println("numero es impar");}
+   			if (a >= 0) {System.out.println("y es impar");}
 
    		// si el numero es par
-   			else {System.out.println("numero es par");}
+   			else {System.out.println("y es par");}
 
    }
 }
