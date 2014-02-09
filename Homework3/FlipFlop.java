@@ -12,28 +12,37 @@ y si no cumple ninguna de estas condiciones, solo mostrar el valor de ese numero
 */
 
 public class FlipFlop {   
-
+	public static int divisor1(int numActual){int numTres = numActual%3; return numTres;};
+	public static int divisor2(int numActual){ int numCinco = numActual%5; return numCinco;};
+  
    public static void main(String[] args) {
-   		int numeroActual = 0;
-   		
-   		for (numActual = 1; numActual < 25; numActual++){
-		int numTres = numActual%3;
-		int numCinco = numActual%5;
+   		int numeroActual = 1;
+
+
+
+ 
+		
+   		for (numeroActual = 1; numeroActual < 25; numeroActual++){
+		int Cinco= divisor1(numeroActual);
+		int Tres= divisor2(numeroActual); 
+		
 
    		// si el numero es divisible dentro de 3 imprima "Flip"
-   		if(numTres<=0 && numCinco!=0){
+   		if(Tres<=0 && Cinco!=0){
 			System.out.println("Flip");}
 
    		// si el numero es divisible dentro de 5 imprima "Flop"
-		if(numCinco<=0 && numTres!=0){
+		if(Cinco<=0 && Tres!=0){
 			System.out.println("Flop");}
 
    		// si el numero es divisible dentro de 3 y 5 imprima "FlipFlop"
-		if(numTres<=0 && numCinco<=0){
+		if(Tres<=0 && Cinco<=0){
 			System.out.println("FlipFlop");}
 
    		// de lo contrario, imprima el numero
-   		if(numTres!=0 && numCinco!=0){
+   		if(Tres!=0 && Cinco!=0){
       		System.out.println(numeroActual);} }
+      		
+
    }
 }
